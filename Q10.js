@@ -1,11 +1,8 @@
 function capitalize(str){
     //using the javascript split function to split the words of a sentence 
-    const eachWord = str.split('');
-    const capitalizedSentence = eachWord.map(eachWord => eachWord.charAt(0).toUpperCase() + eachWord.slice(1));
-
-    return capitalizedSentence.join('');
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
 
 str = "hello! welcome to the global trend";
-const ans = capitalize(str);
+let ans = capitalize(str);
 console.log(ans);
