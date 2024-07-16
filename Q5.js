@@ -1,8 +1,6 @@
 /*
 Write a function that takes an array and returns a new array with duplicates removed.
-
 */
-
 function removeDuplicate(){
     let arraySize = arr.length;
     arr.sort();
